@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unicode-codepoints"
+version = "1.0.0"
+description = "List each character with code point and Unicode name."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "seipass"}]
+
+[project.scripts]
+unicode-codepoints = "unicode_codepoints:main"
+
+[tool.setuptools]
+py-modules = ["unicode_codepoints"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
